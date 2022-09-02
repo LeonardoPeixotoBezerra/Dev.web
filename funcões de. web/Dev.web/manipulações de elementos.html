@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bhaskara</title>
+</head>
+<body  id="body">
+    <h1>bhaskara</h1>
+
+
+
+    <label for="inpValorA">Valor de a:</label>
+    <input type="number" id="inpValorA">
+    <label for="inpValorB">Valor de b:</label>
+    <input type="number" id="inpValorB">
+    <label for="inpValorA">Valor de C:</label>
+    <input type="number" id="inpValorC">
+
+
+    <button onclick="calcula()">calcular</button>
+
+    <div id="resultado"></div>
+    <script>
+
+        function calcula() {
+            const valorA = Number(document.getElementById("inpValorA").value)
+            const valorB = Number(document.getElementById("inpValorB").value)
+            const valorC = Number(document.getElementById("inpValorC").value)
+
+            const delta = valorB ** 2 - 4 * valorA * valorC
+
+        if(valorA === 0){
+            alert("1º grau");
+        }else if (delta < 0){
+            alert("não existe raiz");
+        }else{
+            alert("e uma equação")
+        }
+        
+
+
+        const X1 = (-valorB + Math.sqrt(delta)) / (valorA * 2);
+        const X2 = (-valorB - Math.sqrt(delta)) / (valorA * 2);
+
+        document.getElementById("resultado").innerHTML = `resultado X1 = ${X1.toFixed(3)}; resultado X2: ${X2.toFixed(3)}`
+
+        }
+
+
+    </script>
+</body>
+</html>
