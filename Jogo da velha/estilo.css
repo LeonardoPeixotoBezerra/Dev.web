@@ -1,0 +1,42 @@
+main{
+    position: absolute;
+}
+
+.casa{
+    border: 5px solid black;
+    width: 300px;
+    height: 300px;
+    font-size: 120px;
+    color: black;
+    text-align: center;
+    line-height: 300px;
+}
+.linha{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+  @keyframes changeBackgroundColor {
+    0% {
+      background-color: #001F3F;
+    }
+    25%{
+        background-color: aqua;
+    }
+
+    50% {
+      background-color: #FF4136;
+    }
+    75%{
+        background-color: yellow;
+    }
+    100% {
+      background-color: green;
+    }
+  }
