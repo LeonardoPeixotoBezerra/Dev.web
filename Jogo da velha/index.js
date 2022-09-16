@@ -12,7 +12,7 @@ let casa08 = document.getElementById("casa08");
 let casa09 = document.getElementById("casa09");
 
 let body = document.getElementById("body");
-let parabens 
+let parabens ;
 
 
 
@@ -32,6 +32,7 @@ function alterna_jogador() {
         jogador = "X";
     }
 }
+
 function verifica_ganhador() {
     if (casa01.innerHTML!="" && casa01.innerHTML===casa02.innerHTML && casa01.innerHTML=== casa03.innerHTML){
         alert(`Temos uma ganhador: ${casa01.innerHTML}`);
@@ -70,5 +71,13 @@ function verifica_ganhador() {
         alert(`Temos uma ganhador: ${casa07.innerHTML}`)
         body.style.animation = "changeBackgroundColor 1s infinite";
 
-    }   
+    } else if(casa01.innerHTML != "" && casa02.innerHTML != "" && casa03.innerHTML != "" && casa04.innerHTML != "" && casa05.innerHTML != "" && casa06.innerHTML != "" && casa07.innerHTML != "" && casa08.innerHTML != "" && casa09.innerHTML != ""){
+        alert("DEU VELHA!!!");
+        document.getElementById("veia").style.display = "block";
+        document.getElementById("veia").style.position = "absoute";
+        document.getElementById("veia").style.display = "height: 100%";
+        document.getElementById("veia").style.display = "width: 100%";
+        document.getElementById("veia").style.animation = "moveToLeft 1s infinite";
+    }
+    
 }

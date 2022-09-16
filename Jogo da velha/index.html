@@ -9,6 +9,7 @@
 </head>
     
 <body id="body">
+    <img id="veia"src="https://super.abril.com.br/wp-content/uploads/2017/03/por-que-o-jogo-da-velha-tem-esse-nome.jpg?quality=90&strip=info&w=1024" alt="">
     <main>
         <div class="linha">
             <div id="casa01" class="casa" onclick="jogada(this);"></div>
@@ -25,7 +26,14 @@
             <div id="casa08" class="casa" onclick="jogada(this);"></div>
             <div id="casa09" class="casa" onclick="jogada(this);"></div>
         </div>
+
     </main>
+    <div id="placar">
+        <h1>placar</h1>
+        <p>X = 0</p>
+        <p>O = 0</p>
+        <button onclick="zerarPlacar();">zerar placar</button>
+    </div>
     
     <script src="index.js"></script>
 </body>
