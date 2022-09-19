@@ -74,10 +74,13 @@ function verifica_ganhador() {
     } else if(casa01.innerHTML != "" && casa02.innerHTML != "" && casa03.innerHTML != "" && casa04.innerHTML != "" && casa05.innerHTML != "" && casa06.innerHTML != "" && casa07.innerHTML != "" && casa08.innerHTML != "" && casa09.innerHTML != ""){
         alert("DEU VELHA!!!");
         document.getElementById("veia").style.display = "block";
+        document.getElementById("main").style.display = "none";
         document.getElementById("veia").style.position = "absoute";
         document.getElementById("veia").style.display = "height: 100%";
         document.getElementById("veia").style.display = "width: 100%";
-        document.getElementById("veia").style.animation = "moveToLeft 1s infinite";
+        document.getElementById("veia").style.animation = "moveToLeft 2s linear ";
+        document.getElementById("empate").style.display = "block";
+        document.getElementById("empate").style.position = "absoute";
     }
     
 }
