@@ -37,6 +37,7 @@ function verifica_ganhador() {
     if (casa01.innerHTML!="" && casa01.innerHTML===casa02.innerHTML && casa01.innerHTML=== casa03.innerHTML){
         alert(`Temos uma ganhador: ${casa01.innerHTML}`);
         body.style.animation = "changeBackgroundColor 1s infinite";
+        
    
     }else if(casa01.innerHTML!="" && casa01.innerHTML===casa04.innerHTML && casa01.innerHTML=== casa07.innerHTML){
         alert(`Temos uma ganhador: ${casa01.innerHTML}`);
@@ -82,5 +83,4 @@ function verifica_ganhador() {
         document.getElementById("empate").style.display = "block";
         document.getElementById("empate").style.position = "absoute";
     }
-    
 }
