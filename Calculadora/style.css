@@ -1,0 +1,59 @@
+.row {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    line-height: 100px;
+}
+.bntButton {
+    font-size: 40px;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.bntButton2 {
+    font-size: 40px;
+    background-color: grey;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#resultado {
+
+    background-color: black;
+    color: white;
+    border: 4px black solid;
+    border-radius: 50px 50px 50px 50px;
+    font-size: 65px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+#bntResultado{
+    font-size: 90px;
+    background-color: grey;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+button {
+    transition: 0.5s;
+    border: 2px solid black ;
+}
+
+button:hover,
+#Bts_Igual:hover {
+    background-color: rgb(77, 74, 74);
+    color: white;
+
+}
+
+.cor_Nova {
+    background-color: grey;
+}
